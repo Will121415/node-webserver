@@ -8,7 +8,7 @@ const port = process.env.PORT;
 
 // Handlebars
 app.set('view engine', 'hbs');
-hbs.registerPartials(__dirname + '/views/partials', function (err) {});
+hbs.registerPartials(__dirname + '/views/partials');
 
 // Servir contenido estatico
 app.use( express.static('public'));
